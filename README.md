@@ -2,7 +2,7 @@
 <p align="center"><b>Graduate Research Assistant | AI for Sustainable Irrigation | Oklahoma State University</b></p>
 
 <p align="center">
-  <img src="IMG_9703.JPG" alt="Abinava Yeshwanth KJ" width="280" />
+  <img src="assets/IMG_9703.JPG" alt="Abinava Yeshwanth KJ" width="280" />
 </p>
 
 ## About Me
@@ -28,8 +28,8 @@ I build data-driven tools that help farmers make better irrigation decisions. My
 - Oklahoma Agricultural Scientific Irrigation Scheduler, Oklahoma Governor's Water Conference (2024)
 
 ## Documents
-- [Curriculum Vitae](2026_CV_AbinavaYeshwanth_KJ_BAE.docx)
-- [Statement of Purpose](SOP_KJ_PhDBAE.docx)
+- [Curriculum Vitae](assets/2026_CV_AbinavaYeshwanth_KJ_BAE.docx)
+- [Statement of Purpose](assets/SOP_KJ_PhDBAE.docx)
 - [Portfolio Website (GitHub Pages)](https://yeshwanthkj.github.io/yeshwanthkj/)
 
 ## Connect
