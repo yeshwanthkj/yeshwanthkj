@@ -1,0 +1,250 @@
+:root {
+  --ink: #101821;
+  --ink-soft: #2d4558;
+  --paper: #f7f6f0;
+  --sun: #f39c3d;
+  --teal: #0d6b66;
+  --mint: #b8d9c9;
+  --panel: rgba(247, 246, 240, 0.82);
+  --border: rgba(16, 24, 33, 0.12);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Manrope", sans-serif;
+  color: var(--ink);
+  background:
+    radial-gradient(1000px 600px at 110% -20%, rgba(243, 156, 61, 0.35), transparent 60%),
+    radial-gradient(900px 500px at -10% 120%, rgba(13, 107, 102, 0.28), transparent 58%),
+    var(--paper);
+  line-height: 1.55;
+}
+
+.bg-glow {
+  position: fixed;
+  inset: 0;
+  background: linear-gradient(130deg, rgba(184, 217, 201, 0.18), transparent 40%);
+  pointer-events: none;
+  z-index: -1;
+}
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 99;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 6vw;
+  backdrop-filter: blur(8px);
+  background: rgba(247, 246, 240, 0.78);
+  border-bottom: 1px solid var(--border);
+}
+
+.brand {
+  text-decoration: none;
+  color: var(--ink);
+  font-family: "Bebas Neue", sans-serif;
+  letter-spacing: 0.08em;
+  font-size: 1.8rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--ink-soft);
+  margin-left: 1rem;
+  font-weight: 700;
+  font-size: 0.95rem;
+}
+
+main {
+  width: min(1120px, 92vw);
+  margin: 2.2rem auto 3rem;
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 2rem;
+  align-items: center;
+}
+
+.tag {
+  font-family: "Bebas Neue", sans-serif;
+  letter-spacing: 0.08em;
+  color: var(--teal);
+  margin-bottom: 0.4rem;
+}
+
+h1 {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: clamp(2.6rem, 7vw, 5.3rem);
+  letter-spacing: 0.02em;
+  line-height: 0.95;
+  margin: 0;
+}
+
+.lead {
+  max-width: 60ch;
+  font-size: 1.1rem;
+  color: var(--ink-soft);
+}
+
+.hero-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 1.4rem;
+  border: 3px solid rgba(16, 24, 33, 0.08);
+  box-shadow: 0 25px 60px rgba(16, 24, 33, 0.2);
+}
+
+.cta-row {
+  margin-top: 1.2rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+}
+
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  color: var(--ink);
+  border: 1px solid var(--ink);
+  border-radius: 999px;
+  padding: 0.65rem 1rem;
+  font-weight: 700;
+  font-size: 0.9rem;
+  transition: transform 220ms ease, background 220ms ease;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+}
+
+.btn-primary {
+  background: var(--ink);
+  color: var(--paper);
+}
+
+.panel {
+  margin-top: 1.5rem;
+  padding: 1.4rem;
+  border: 1px solid var(--border);
+  border-radius: 1rem;
+  background: var(--panel);
+  box-shadow: 0 10px 30px rgba(16, 24, 33, 0.06);
+}
+
+h2 {
+  margin: 0 0 0.7rem;
+  font-family: "Bebas Neue", sans-serif;
+  letter-spacing: 0.06em;
+  font-size: 2rem;
+}
+
+h3 {
+  margin: 0 0 0.4rem;
+  font-size: 1.05rem;
+}
+
+.facts {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.card {
+  padding: 1rem;
+  border-radius: 0.8rem;
+  background: rgba(184, 217, 201, 0.2);
+  border: 1px solid rgba(13, 107, 102, 0.2);
+}
+
+#research ul {
+  margin: 0.7rem 0 0;
+  padding-left: 1.2rem;
+}
+
+.gallery {
+  margin-top: 1.5rem;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.gallery img {
+  width: 100%;
+  height: 330px;
+  object-fit: cover;
+  border-radius: 1rem;
+  border: 1px solid var(--border);
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.8rem;
+}
+
+.contact-grid a,
+.contact-grid span {
+  padding: 0.85rem;
+  border: 1px dashed rgba(16, 24, 33, 0.35);
+  border-radius: 0.6rem;
+  text-decoration: none;
+  color: var(--ink);
+}
+
+footer {
+  text-align: center;
+  color: var(--ink-soft);
+  padding-bottom: 2rem;
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(22px);
+  transition: opacity 700ms ease, transform 700ms ease;
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (max-width: 900px) {
+  .hero,
+  .facts,
+  .cards,
+  .gallery,
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-image {
+    order: -1;
+  }
+
+  nav {
+    display: none;
+  }
+
+  .site-header {
+    justify-content: center;
+  }
+}
